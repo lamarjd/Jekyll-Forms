@@ -28,6 +28,27 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
+collections:
+  authors:
+  # By default, collections do not output a page for documents. In this case we want each author to have their own page so let’s tweak the collection configuration.
+    output: true
+
+# By defining default layouts in the config file, we no longer need Front Matter in each md file
+defaults:
+  - scope:
+      path: ""
+      type: "authors"
+    values:
+      layout: "author"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
 
 # Build settings
 theme: minima
