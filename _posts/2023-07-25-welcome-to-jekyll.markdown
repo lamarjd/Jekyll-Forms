@@ -1,6 +1,6 @@
 ---
-title:  "Welcome to Jekyll!"
-date:   2023-07-25 16:12:54 -0700
+title: "Register Form"
+date: 2023-07-25 16:12:54 -0700
 categories: jekyll update
 ---
 
@@ -9,6 +9,7 @@ Services provided and benefits text
 ## Personal Information
 
 {% raw %}
+<body>
 <form>
     <div>
         <label>
@@ -154,68 +155,13 @@ Services provided and benefits text
 												type="file" 
 												name="logoImage"
 												accept="image/png, image/jpeg">
-												</input>
 											</label>
 										  </div>
 										<button type="submit">Submit</button>
 									</form>
-								</div>
-							</section>
-					</div>
-				<!-- Footer -->
-					<!-- <footer id="footer">
-						<div class="inner">
-							<ul class="icons">
-								<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-								<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-							</ul>
-							<ul class="copyright">
-								<li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-							</ul>
-						</div>
-					</footer> -->
-			</div>     		
-			<!-- // Dropdown menu logic for "Other" option script -->
-		<script type="text/javascript">
-			// 	element with for all valid selections
-			const industrySelect = document.getElementById("industrySelect");
-			// 	element if "Other" is selected
-			const otherIndustryDiv = document.getElementById("otherIndustryDiv");
-			//	Event listener for user input
-			industrySelect.addEventListener("change", function () {
-				// 	Take the value of the option selected ("Tech, Health, Retail")
-			  const selectedValue = industrySelect.value;
-			  //	 if "Other" is slected
-			  if (selectedValue === "Other") {
-				// 	change to display to block
-				otherIndustryDiv.style.display = "block";
-			  } else {
-				// Otherwise, don't display anything
-				otherIndustryDiv.style.display = "none";
-			  }
-			});
-		  </script>
-		  <!-- VET STATUS SCRIPT -->
-		  <script type="text/javascript">
-			const checkSelect = document.getElementById("non-veteran")
-			const showRelationInput = document.getElementById("non-veteran-input")
-			checkSelect.addEventListener("change", function() {
-				if (checkSelect.checked === true) {
-					showRelationInput.style.display = "block";
-				} else {
-					showRelationInput.style.display = "none";
-				}
-			})
-		  </script>
-	</body>
-</html>
-    <button type="submit">Submit</button>
-</form>
+										<script src="/assets/js/myscript.js" ></script>
+									</body>					    		
+			
+	
 {% endraw %}
 
-## Footer
-
-[//]: # (Add your footer content here)
